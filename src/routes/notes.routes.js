@@ -1,4 +1,4 @@
-import { Router } from "express";
+/*import { Router } from "express";
 import {
   renderNoteForm,
   createNewNote,
@@ -28,3 +28,4 @@ router.put("/notes/edit-note/:id", isAuthenticated, updateNote);
 router.delete("/notes/delete/:id", isAuthenticated, deleteNote);
 
 export default router;
+*/

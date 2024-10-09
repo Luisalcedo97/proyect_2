@@ -1,4 +1,4 @@
-import Note from "../models/Note.js";
+/*import Note from "../models/Note.js";
 
 export const renderNoteForm = (req, res) => res.render("notes/new-note");
 
@@ -52,4 +52,4 @@ export const deleteNote = async (req, res) => {
   await Note.findByIdAndDelete(req.params.id);
   req.flash("success_msg", "Rutina eliminada exitosamente");
   res.redirect("/notes");
-};
+};*/
