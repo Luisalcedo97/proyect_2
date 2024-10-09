@@ -1,0 +1,57 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark p-2 bg-black ">
+  <div class="container">
+    <a class="navbar-brand" href="/">INICIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/about">ACERDA DE</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/programs">PROGRAMAS</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        {{#if user}}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            MI PERFIL
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+            <a class="dropdown-item" href="/notes">Mis rutinas</a>
+            <a class="dropdown-item" href="/notes/add">Agregar una rutina</a>
+            <div class="dropdown-divider"></div>
+            <li class="nav-item dropdown">
+
+                <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                ACTIVIDADES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                <a class="dropdown-item" href="/activities">Mis actividades</a>
+                <a class="dropdown-item" href="/activities/add">Agregar una actividad</a>
+              </ul>
+            </li>
+            <a class="dropdown-item" href="/auth/logout">Salir Sesión</a>
+          </ul>
+        </li>
+        {{else}}
+        <li class="nav-item">
+          <a class="nav-link" href="/auth/signin">INGRESAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/auth/signup">REGISTRARSE</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

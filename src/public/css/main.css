@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar{
+  position: sticky;
+  top: 	0;
+}
+.navbar{
+  background-image: linear-gradient(to right, #2A2C2B, #0C1B84);
+  padding: 0 !important;
+}
+.navbar-nav li 
+{
+  padding: 0 10px;
+}
+.navbar-nav li a
+{
+  color: #fff !important;
+  font-weight: 600;
+  float: right;
+  text-align: center;
+}
+.navbar-toggler 
+{
+  outline: none !important;
+}
+#banner{
+  background-image: linear-gradient(to right, #2A2C2B, #0C1B84) !important; 
+  color : #fff;
+  padding-top: 5% !important;
+}
+.title-gym {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+}
